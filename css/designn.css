@@ -1,0 +1,752 @@
+/* about.css */
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about p {
+    margin-right: 20px;
+}
+
+.about_pics {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.about_pics img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* contact.css */
+
+.contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact p {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #d64430;
+}
+
+.map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 80vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        margin-top: 0;
+        max-width: 100px;
+        height: 100px !important;
+    }
+}
+
+/* reservation.css */
+.reservation {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e5914C;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #d64430;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+    background-color: #e5914C;
+}
+
+/* faq.css */
+#faq {
+    text-align: center;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.accordion-item {
+    background-color: #f6d365;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background-color: #e5914C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.accordion:hover {
+    background-color: #d64430;
+}
+
+.panel {
+    display: none;
+    padding: 10px 0;
+}
+
+.panel p {
+    margin: 0;
+}
+
+/* footer.css */
+footer {
+    background-color: #d64430;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+
+body {
+    font-family: "Aref Ruqaa", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin-bottom: -20px;
+    background-color: #f6d365;
+}
+
+/* Set a protective zone for the whole content, excluding header and nav */
+body > *:not(header):not(nav) {
+    padding: 0 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* header.css */
+header {
+    position: relative;
+    background-image: url(../obrazky/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(214, 68, 48, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+header div {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+header div span {
+    font-size: 1.2em;
+    color: #ffffff;
+} 
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Menu section styles */
+#menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vyber {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* menu.css */
+main {
+    padding: 20px;
+    margin: 10px;
+}
+
+.vyber {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vyber button {
+    background-color: #e5914C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.vyber button:hover {
+    background-color: #d64430;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+div.vyber button {
+    border-radius: 5px;
+}
+.hidden {
+    display: none !important;
+}
+
+/* Menu section styles */
+#menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: #f6d365;
+}
+
+.category div {
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #e5914C;
+    border-radius: 8px;
+}
+
+.category div div.stuff {
+    border-style: none;
+    border-width: 0;
+    margin: 0;
+}
+
+.category div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .category div {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        background-color: #e5914C;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-height: 200px;
+    }
+
+    .category div img {
+        width: 40%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 10px;
+        max-height: 180px;
+        object-fit: contain;
+    }
+
+    .category div .stuff {
+        width: 60%;
+        max-width: calc(100% - 160px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .category div h3 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .category div p.popis {
+        display: none;
+    }
+
+    .category div p {
+        margin: 0;
+    }
+}
+
+/* navbar.css */
+nav {
+    background-color: #d64430;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3 ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2);
+    font-size: 1.4em;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+}
+
+nav a img {
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+/*regular menu*/
+ul.collapsed {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+ul.collapsed li {
+    text-decoration: none !important;
+}
+
+ul.collapsed li a {
+    text-decoration: none !important;
+}
+
+ul.collapsed li.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    transition: transform 0.3s ease;
+    list-style: none;
+}
+
+ul.collapsed li a img {
+    max-height: 30px;
+    transition: transform 0.3s ease;
+}
+
+ul.collapsed li.menu-icon:hover,
+ul.collapsed li a:hover img {
+    transform: scale(1.2);
+}
+
+/* review.css */
+.review {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review_item {
+    flex: 1;
+    background-color: #f6d365;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review_item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* mobile.css */
+@media only screen and (max-width: 768px) {
+    body > *:not(header):not(nav) {
+        padding: 0 5%;
+    }
+    
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    .vyber {
+        flex-direction: column;
+    }
+
+    .vyber button {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: #f6d365;
+        padding: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .about_pics {
+            flex-direction: column;
+        }
+
+        .about_pics img {
+            margin-bottom: 20px;
+        }
+
+        .contact,
+        .reservation,
+        .review_item {
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 150px;
+        }
+    }
+
+    ul.collapsed li.menu-icon {
+        display: block;
+        color: white;
+    }
+
+    ul.collapsed li:not(.menu-icon) {
+        display: none;
+        font-size: 18px;
+        list-style: none;
+    }
+
+    ul.opened li.menu-icon {
+        transition: all 1s ease-out;
+        top: 15px;
+        right: 10px;
+        position: absolute;
+    }
+
+    /* for second li inside ul.opened */
+    ul.opened li.logo {
+        transition: all 1s ease-out;
+        top: 2px;
+        left: 5px;
+        position: absolute;
+    }
+
+    ul.opened {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 10vh;
+    }
+
+    ul.collapsed.flexible {
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    .vyber {
+        flex-direction: column;
+    }
+
+    .vyber button {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .menu .category {
+        flex: 1 0 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about_pics {
+        flex-direction: column;
+    }
+
+    .about_pics img {
+        margin-bottom: 20px;
+    }
+
+    .contact,
+    .reservation,
+    .review_item {
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center !important;
+        list-style: none;
+    }
+
+    .opened {
+        list-style: none;
+        color: white;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+       .about_pics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_pics img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 10px;
+        border-radius: 8px;
+    }
+}
+
+/* special_offer.css */
+.special-offer {
+    position: sticky;
+    bottom: 20px;
+    display: none;
+    background-color: #f6d365;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.special-offer h2 {
+    color: #d64430;
+    margin-bottom: 10px;
+}
+
+.special-offer p {
+    margin: 0;
+}
+
+#specialItem {
+    font-weight: bold;
+    color: #e5914C;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #d64430;
+}
+
+.close-btn:hover {
+    color: #e5914C;
+}
+
+.about_pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_pics img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+/* special_offer.css */
+.special-offer {
+position: sticky;
+bottom: 20px;
+display: none;
+background-color: #f6d365;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+text-align: center;
+}
+
+.special-offer h2 {
+color: #d64430;
+margin-bottom: 10px;
+}
+
+.special-offer p {
+margin: 0;
+}
+
+#specialItem {
+font-weight: bold;
+color: #e5914C;
+}
+
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: transparent;
+border: none;
+font-size: 1.5em;
+cursor: pointer;
+color: #d64430;
+}
+
+.close-btn:hover {
+color: #e5914C;
+}

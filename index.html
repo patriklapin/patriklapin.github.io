@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picante</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/special_offer.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+                   .topnav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000; 
+            width: 100%; 
+            background-color: white; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .topnav a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color:white ;
+  color: #f6d365;
+  font-weight: bold;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.menu-item-image {
+            width: 150px;  /* Set your desired width */
+            height: 150px;  /* Set your desired height */
+            object-fit: cover; /* Ensure the image covers the set dimensions */
+            border-radius: 8px; /* Optional: Add border radius for better look */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+header{
+    background-image: url(header.jpg);
+}
+.menu-item{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #FAFAFA;
+}
+
+.news-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .news-item h3 {
+            margin: 0;
+        }
+
+        .news-item p {
+            margin: 5px 0;
+        }
+        .price{
+        color: #f9a61f  ;
+    font-weight: bold;}
+
+    /* CSS styly pro rezervační formulář */
+.reservation {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservation form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.reservation input[type="text"],
+.reservation input[type="email"],
+.reservation input[type="tel"],
+.reservation input[type="date"],
+.reservation input[type="time"],
+.reservation input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.reservation input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f9a61f;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservation input[type="submit"]:hover {
+    background-color: #037a54;
+}
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home"> <img src="logopicante.png" style="width: 80px;">  </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#menu">Menu</a>
+        <a href="#news">Novinky</a>
+        <a href="#reservation">Rezervace</a>
+        <a href="#about">O nás</a>
+        <a href="#contact">Kontakt</a>
+         <a href="https://www.foodora.cz/restaurants/new?lat=50.20288731&lng=14.68575787&expedition=delivery">Dovoz</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       <img src="picantenav.png" alt="navbar" style="width: 30px;">
+      </a>
+    </div>
+    <header>
+        <div >
+            <h1 id="home">Picante</h1>
+            <span><span style="color: #ff1e00 ; ">Tex</span>-<span style="color: #f9a61f ;">Mex</span> <span style="color: #57c800;">Food</span></span>
+        </div>
+    </header>
+    <main>
+        <h1 id="menu" style="color: #f9a61f ;">Nabídka</h1>
+        <!-- Menu - Show by btn-->
+        <div class="vyber">
+            <button onclick="showCategory('all')">Vše</button>
+            <button onclick="showCategory('aperitiv')">Předkrmy</button>
+            <button onclick="showCategory('desserts')">Deserty</button>
+            <button onclick="showCategory('main_course')">Hlavní jídla</button>
+            <button onclick="showCategory('nonalcoholic_drinks')">Nealkoholické nápoje</button>
+            <button onclick="showCategory('alcoholic_drinks')">Alkoholické nápoje</button>
+        </div>
+        <div class="menu">
+            <div id="aperitiv" class="category"></div>
+            <div id="main_course" class="category"></div>
+            <div id="desserts" class="category"></div>
+            <div id="nonalcoholic_drinks" class="category"></div>
+            <div id="alcoholic_drinks" class="category"></div>
+        </div>
+
+        <h1 id="news" style="color: #57c800;">Novinky</h1>
+        <div class="news-section">
+            <div class="news-item">
+                <h3>Nová položka v menu: <span style="color: #57c800;">Tacos al Pastor</span></h3>
+                <p>Datum: 2024-06-05</p>
+                <p>Přidali jsme do našeho menu nové Tacos al Pastor Přijďte je ochutnat!</p>
+            </div>
+            <div class="news-item">
+                <h3>Letní akce : <span style="color: #57c800;">Margarita</span></h3>
+                <p>Datum: 2024-06-01</p>
+                <p>Během léta nabízíme Margaritu za poloviční cenu! Platí pouze o víkendech.</p>
+            </div>
+        </div>
+        <h1 id="reservation" style="color: #f9a61f;">Rezervace</h1>
+<div class="reservation">
+    <form id="reservationForm" action="data/reservation.php" method="post">
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="date">Datum:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Čas:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <label for="people">Počet osob:</label>
+        <input type="number" id="people" name="people" required min="1">
+        
+        <input type="submit" value="Odeslat">
+    </form>
+</div>
+
+        <h1 id="about" style="color: #ff1e00;">O nás</h1>
+        <div class="about">
+            <p>
+                Vítejte v Picante , kde se mísí autenticita mexické kuchyně s vášní pro kulinářské umění. Nacházíme se v malebném centru Prahy a jsme hrdí na to, že vám můžeme nabídnout pravé chutě Mexika přímo zde v České republice.
+            </p>
+            <img src="obrazky/restaurant.jpg" alt="Restaurant" style="width:100%;height:auto;"/>
+            <p>
+                Naše restaurace je místem, kde se setkávají tradiční recepty s moderním přístupem. Každý pokrm je připravován s maximální péčí a úctou k mexické gastronomii. Naše kuchyně je postavena na čerstvých a autentických surovinách, které dovážíme přímo z Mexika. Tím zajišťujeme, že každý chod je nejen chutný, ale i autentický.
+            </p>
+            <img src="obrazky/interior.jpg" alt="Interiér" style="width:100%;height:auto;"/>
+            <p>
+                Náš tým tvoří zkušení kuchaři, kteří mají dlouholetou praxi v přípravě tradičních mexických jídel. Připravujeme pro vás pokrmy jako tacos, enchiladas, burritos a další. Zvláštní pozornost věnujeme detailům, které zajišťují, že každé jídlo přináší autentický zážitek. Naše nabídka zahrnuje také pestrou škálu vegetariánských a bezlepkových možností, aby si každý host našel to své.
+            </p>
+            <img src="obrazky/tacos.jpg" alt="Tacos" style="width:100%;height:auto;"/>
+            <p>
+                Kromě našich vynikajících pokrmů nabízíme široký výběr tradičních mexických nápojů. Naše Margaritas, Mezcal a Tequila jsou připravovány podle originálních receptur a přinesou vám osvěžující zážitek, který doplní vaše gastronomické dobrodružství. Nealkoholické nápoje jako Horchata a Agua de Jamaica pak potěší i ty, kteří preferují zdravější varianty.
+            </p>
+            <img src="obrazky/drinks.jpg" alt="Mexické nápoje" style="width:100%;height:auto;"/>
+            <p>
+                Picante není jen o jídle. Chceme, aby se naši hosté cítili jako doma, proto jsme naši restauraci zařídili tak, aby nabízela pohodlí a příjemnou atmosféru. Naši přátelští a profesionální zaměstnanci jsou připraveni vám poskytnout ten nejlepší možný servis, aby vaše návštěva byla co nejpříjemnější.
+            </p>
+            <img src="obrazky/servis.jpg" alt="Servis" style="width:100%;height:auto;"/>
+            <p>
+                Pravidelně také pořádáme tematické večery a speciální akce, kde máte možnost ochutnat sezónní speciality nebo se zúčastnit kurzů vaření mexických jídel. Sledujte naše sociální sítě a webové stránky pro více informací o nadcházejících událostech.
+            </p>
+            <img src="obrazky/event.jpg" alt="Tematické večery" style="width:100%;height:auto;"/>
+            <p>
+                Děkujeme, že jste si vybrali Picante. Těšíme se na vaši návštěvu a věříme, že u nás zažijete nezapomenutelné chvíle plné chutí a radosti. Přijďte ochutnat kousek Mexika přímo u nás!
+            </p>
+            <div class="about_pics">
+                <img src="obrazky/vlajka.png" alt="Mexická vlajka" style="width:30%;height:auto;margin-right:1%;" />
+                <img src="obrazky/kuchari.jpg" alt="Naši kuchaři" style="width:30%;height:auto;margin-right:1%;" />
+                <img src="obrazky/dezerty.jpg" alt="Mexické dezerty" style="width:30%;height:auto;" />
+            </div>
+        </div>
+         
+        
+
+       
+
+        <h1 id="contact">Kontakt</h1>
+        <div>
+            <div class="contact">
+                <p>
+                    Adresa: Jugoslávská 180/15, 120 00 Praha 2-Vinohrady<br/>
+                    Telefon: +420 123 456 789<br/>
+                    Email:
+                    <a href="mailto:info@los-sabores.cz">info@los-sabores.cz</a><br/>
+                    Otevírací doba: Po-Pá 11:00-22:00,<br/> So-Ne 12:00-23:00<br/>
+                    &copy; 2024 Picante | All rights reserved
+                </p>
+                <iframe src="https://maps.app.goo.gl/9iUti6aYmpLxbPxp6" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>  
+        </div>
+        
+        
+    </main>
+    <script>
+    
+        $(document).ready(function() {
+            // Toggle for FAQ accordion
+            var acc = document.getElementsByClassName("accordion");
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+
+            // Show/hide menu categories
+            function showCategory(category) {
+                $(".category").hide();
+                if (category === 'all') {
+                    $(".category").show();
+                } else {
+                    $("#" + category).show();
+                }
+            }
+            window.showCategory = showCategory;
+
+            // Menu toggle for mobile view
+            function toggleMenu() {
+                var menu = document.getElementById("menu-list");
+                if (menu.className === "collapsed") {
+                    menu.className = "expanded";
+                } else {
+                    menu.className = "collapsed";
+                }
+            }
+            window.toggleMenu = toggleMenu;
+
+            // Sample data for menu categories (you can replace this with real data)
+            var menuData = {
+                "aperitiv": [
+                    {name: "Guacamole", description: "Avokádový dip s čerstvými rajčaty a koriandrem.", price: "120 Kč", image: "obrazky/guacamole.jpg"},
+                    {name: "Quesadilla", description: "Tortilla plněná sýrem a grilovaná do křupava.", price: "150 Kč", image: "obrazky/quesadilla.jpg"}
+                ],
+                "main_course": [
+                    {name: "Tacos al Pastor", description: "Tradiční mexické tacos s marinovaným vepřovým masem.", price: "200 Kč", image: "obrazky/tacos_al_pastor.jpg"},
+                    {name: "Enchiladas", description: "Tortilly plněné kuřecím masem a polité rajčatovou omáčkou.", price: "180 Kč", image: "obrazky/enchiladas.jpg"}
+                ],
+                "desserts": [
+                    {name: "Churros", description: "Smažené pečivo s cukrem a skořicí.", price: "90 Kč", image: "obrazky/churros.jpg"},
+                    {name: "Flan", description: "Mexický karamelový pudink.", price: "110 Kč", image: "obrazky/flan.jpg"}
+                ],
+                "nonalcoholic_drinks": [
+                    {name: "Horchata", description: "Tradiční rýžový nápoj s vanilkou a skořicí.", price: "60 Kč", image: "obrazky/horchata.jpg"},
+                    {name: "Agua de Jamaica", description: "Osvěžující nápoj z květů ibišku.", price: "50 Kč", image: "obrazky/agua_de_jamaica.jpg"}
+                ],
+                "alcoholic_drinks": [
+                    {name: "Margarita", description: "Koktejl z tequily, limetkové šťávy a triple sec.", price: "120 Kč", image: "obrazky/margarita.jpeg"},
+                    {name: "Mezcal", description: "Tradiční mexický destilát.", price: "150 Kč", image: "obrazky/mezcal.jpg"}
+                ]
+            };
+            
+
+            // Function to render menu items
+            function renderMenuItems() {
+                for (var category in menuData) {
+                    var items = menuData[category];
+                    for (var i = 0; i < items.length; i++) {
+                        var item = items[i];
+                        $("#" + category).append(
+                            "<div class='menu-item'>" +
+                            "<img src='" + item.image + "' alt='" + item.name + "' class='menu-item-image'/>" +
+                            "<h3>" + item.name + "</h3>" +
+                            "<p>" + item.description + "</p>" +
+                            "<p class='price'>" + item.price + "</p>" +
+                            "</div>"
+                        );
+                    }
+                }
+            }
+            renderMenuItems();
+
+           
+
+        
+        });
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,39 @@
+/* header.css */
+
+header {
+    position: relative;
+    background-image: url(../obrazky/header.jpg); /* Assuming "header.jpg" is a Mexican-themed image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*header::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 215, 0, 0.5);
+    backdrop-filter: blur(10px); 
+}*/
+
+header div {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+header div span {
+    font-size: 1.2em;
+    color: #ffffff;
+}

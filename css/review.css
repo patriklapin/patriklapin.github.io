@@ -1,0 +1,21 @@
+/* review.css */
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review_item {
+    flex: 1;
+    background-color: #ffd700; /* Adjusted background color to match Mexican theme */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review_item img {
+    width: 100%;
+    border-radius: 8px;
+}

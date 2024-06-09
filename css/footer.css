@@ -1,0 +1,20 @@
+/* footer.css */
+
+footer {
+    background-color: #BD8E59; /* Color adjusted to match Mexican theme */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+    margin-top: 10px;
+}

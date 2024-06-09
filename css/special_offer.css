@@ -1,0 +1,42 @@
+/* special_offer.css */
+.special-offer {
+    position: fixed; /* Changed position to fixed */
+    bottom: 20px;
+    right: 20px; /* Adjusted position */
+    display: none;
+    background-color: #f6d365;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.special-offer h2 {
+    color: #d64430;
+    margin-bottom: 10px;
+}
+
+.special-offer p {
+    margin: 0;
+}
+
+#specialItem {
+    font-weight: bold;
+    color: #e5914C;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #d64430;
+}
+
+.close-btn:hover {
+    color: #e5914C;
+}

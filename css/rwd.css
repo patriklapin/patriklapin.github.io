@@ -1,0 +1,165 @@
+/* mobile.css */
+@media only screen and (max-width: 768px) {
+    body > *:not(header):not(nav) {
+        padding: 0 5%;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    .vyber {
+        flex-direction: column;
+    }
+
+    .vyber button {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: #f6d365;
+        padding: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+    
+
+    .about_pics {
+        flex-direction: column;
+    }
+
+    .about_pics img {
+        margin-bottom: 20px;
+    }
+
+    .contact,
+    .reservation,
+    .review_item {
+        margin-bottom: 20px;
+    }
+    iframe{ /*maybe resize for smaller?*/
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /*Hamburger menu*/
+    ul.collapsed li.menu-icon {
+        display: block;
+        color: white;
+    }
+
+    ul.collapsed li:not(.menu-icon) {
+        display: none;
+        font-size: 18px;
+        list-style: none; /* Removed text-decoration for collapsed menu items */
+    }
+    ul.opened li.menu-icon {
+        transition: all 1s ease-out;
+        top: 15px;
+        right: 10px;
+        position: absolute;
+    }
+    /* for second li inside ul.opened */
+    ul.opened li.logo{
+        transition: all 1s ease-out;
+        top: 2px;
+        left: 5px;
+        position: absolute;
+    }
+    ul.opened{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 10vh;
+    }
+
+    ul.collapsed.flexible {
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    .vyber {
+        flex-direction: column;
+    }
+
+    .vyber button {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .menu .category {
+        flex: 1 0 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about_pics {
+        flex-direction: column;
+    }
+
+    .about_pics img {
+        margin-bottom: 20px;
+    }
+
+    .contact,
+    .reservation,
+    .review_item {
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        text-decoration: none; /* Removed text-decoration for nav links on smaller screens */
+    }
+    nav{
+        display: flex;
+        justify-content: center !important;
+        list-style: none;
+    }
+    .opened{
+        list-style: none;
+        color: white;
+    }
+    
+    nav a:hover {
+        text-decoration: underline; /* Underline on hover for nav links on smaller screens */
+    }
+    .about_pics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_pics img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 10px;
+        border-radius: 8px;
+    }
+}
+
+}

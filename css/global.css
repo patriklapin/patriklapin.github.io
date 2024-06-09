@@ -1,0 +1,22 @@
+/* global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif; /* Font changed to Josefin Sans */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin-bottom: -20px;
+    background-color:white; /* Adjusted background color to match Mexican theme */
+}
+
+/* Set a protective zone for the whole content, excluding header and nav */
+body > *:not(header):not(nav) {
+    padding: 0 10%;
+}
+
+h1 {
+    text-align: center;
+}
